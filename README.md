@@ -1,17 +1,19 @@
 # Ohmyangboy Tap
 
-## How do I install these formulae?
+## Install Paper
 
-`brew install ohmyangboy/tap/<formula>`
-
-Or `brew tap ohmyangboy/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "ohmyangboy/tap"
-brew "<formula>"
+```sh
+brew install ohmyangboy/tap/paper
 ```
+
+Or `brew tap ohmyangboy/tap` and then:
+
+```sh
+brew install paper
+```
+
+Paper 是一个 macOS 优先的极简 Markdown SSG 与写作 CLI。源码与文档见
+[ohmyangboy/paper-blog](https://github.com/ohmyangboy/paper-blog)。
 
 ## Documentation
 
