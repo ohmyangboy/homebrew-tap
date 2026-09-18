@@ -1,6 +1,6 @@
 cask "paperrss" do
-  version "1.4.1"
-  sha256 "5c11dd751b064805fb46307e9f3ec8cb415b63c7f22e4366e03ac18115fc646e"
+  version "1.4.2"
+  sha256 "7fa7f718e68885fb155299272a1e45d8e8be8590bb3d43d2d6a34b5f5085b0e9"
 
   url "https://github.com/ohmyangboy/PaperRss/releases/download/v#{version}/PaperRss-v#{version}.dmg"
   name "PaperRss"
