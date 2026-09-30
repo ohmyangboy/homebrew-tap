@@ -3,11 +3,12 @@ class Paper < Formula
 
   desc "Minimal Markdown static site generator and writing CLI"
   homepage "https://github.com/ohmyangboy/paper-blog"
-  url "https://github.com/ohmyangboy/paper-blog/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "e42bad566b046e5dc42cd6dd201c40c17bb8c5e55bbe0efa2bcd82557cfbb2a4"
+  url "https://github.com/ohmyangboy/paper-blog/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "e0fcf979f075117b30a830ec40436ea307f7f7d20f126f36e03a9595bc9d2df6"
   license "GPL-3.0-only"
 
   depends_on "python@3.12"
+  depends_on "jpeg-turbo"
 
   resource "markdown-it-py" do
     url "https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl"
@@ -22,6 +23,11 @@ class Paper < Formula
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl"
     sha256 "81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176"
+  end
+
+  resource "Pillow" do
+    url "https://files.pythonhosted.org/packages/1c/3d/bb7fca845737cf9d7dbde16ed1843984665ff2e0a518f5db43e77ec540b9/pillow-12.3.0.tar.gz"
+    sha256 "3b8182a766685eaa002637e28b4ec8d6b18819a0c71f579bf0dbaa5830297cce"
   end
 
   def install
